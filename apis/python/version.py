@@ -138,6 +138,7 @@ def writeReleaseVersion(version):
 
 
 def getVersion():
+    writeReleaseVersion("0.0.0")
     release_version = readReleaseVersion()
     version = readGitVersion() or release_version
     if not version:
